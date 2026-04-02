@@ -1,0 +1,5 @@
+# https://subhiafoundation.org
+User-agent: *
+Allow: /
+
+Sitemap: https://subhiafoundation.org/sitemap.xml
