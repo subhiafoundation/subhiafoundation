@@ -205,6 +205,32 @@
             background: var(--saffron-dark);
         }
 
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-play {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 18px;
+            border: 1.5px solid var(--saffron);
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--saffron-dark);
+            background: rgba(255, 153, 51, 0.08);
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .nav-play:hover {
+            background: rgba(255, 153, 51, 0.16);
+            border-color: var(--saffron-dark);
+        }
+
         .hero {
             position: relative;
             min-height: 100vh;
@@ -542,6 +568,23 @@
             line-height: 1.75;
         }
 
+        .initiative-side .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .initiative-side .btn-site {
+            background: var(--forest);
+            color: white;
+            box-shadow: 0 4px 20px rgba(31, 107, 46, 0.28);
+        }
+
+        .initiative-side .btn-site:hover {
+            background: #185a24;
+            transform: translateY(-2px);
+        }
+
         .pillars {
             padding: 108px 0;
             background: var(--warm-white);
@@ -620,6 +663,17 @@
             max-width: 640px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .footer-cta .btn-ghost {
+            color: var(--dark);
+            border-color: rgba(45, 35, 24, 0.25);
+        }
+
+        .footer-cta .btn-ghost:hover {
+            background: rgba(31, 107, 46, 0.08);
+            border-color: var(--forest-mid);
+            color: var(--forest);
         }
 
         footer {
@@ -751,7 +805,11 @@
                 <a href="#future">Future</a>
             </div>
 
-            <a href="https://praniq.app" class="nav-cta">Visit PraniQ</a>
+            <div class="nav-actions">
+                <a href="https://play.google.com/store/apps/details?id=app.praniq" class="nav-play" target="_blank"
+                    rel="noopener noreferrer">Google Play</a>
+                <a href="https://praniq.app" class="nav-cta">Visit PraniQ</a>
+            </div>
         </div>
     </nav>
 
@@ -768,7 +826,9 @@
                 primary education, and general healthcare.
             </p>
             <div class="hero-buttons">
-                <a href="#initiative" class="btn-solid">Visit PraniQ</a>
+                <a href="https://play.google.com/store/apps/details?id=app.praniq" class="btn-solid" target="_blank"
+                    rel="noopener noreferrer">Get on Google Play</a>
+                <a href="#initiative" class="btn-ghost">Visit PraniQ</a>
                 <a href="#story" class="btn-ghost">Why it exists</a>
             </div>
         </div>
@@ -869,7 +929,11 @@
                 <div class="initiative-side">
                     <h3>Visit PraniQ</h3>
                     <p>Explore the breathing companion inspired by this foundation’s purpose.</p>
-                    <a href="https://praniq.app" class="btn-solid">Go to praniq.app</a>
+                    <div class="btn-stack">
+                        <a href="https://play.google.com/store/apps/details?id=app.praniq" class="btn-solid" target="_blank"
+                            rel="noopener noreferrer">Get on Google Play — Android</a>
+                        <a href="https://praniq.app" class="btn-solid btn-site">Go to praniq.app</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -908,7 +972,9 @@
         <p class="reveal">Subhia Foundation begins with PraniQ — a quiet way to support mental wellbeing, inspired by a
             wider purpose.</p>
         <div class="hero-buttons reveal">
-            <a href="https://praniq.app" class="btn-solid">Visit PraniQ</a>
+            <a href="https://play.google.com/store/apps/details?id=app.praniq" class="btn-solid" target="_blank"
+                rel="noopener noreferrer">Get on Google Play</a>
+            <a href="https://praniq.app" class="btn-ghost">Visit praniq.app</a>
         </div>
     </section>
 
@@ -917,6 +983,8 @@
             <div class="footer-brand">Subhia Foundation</div>
             <div class="footer-links" role="navigation" aria-label="Footer navigation">
                 <a href="https://praniq.app">PraniQ</a>
+                <a href="https://play.google.com/store/apps/details?id=app.praniq" target="_blank"
+                    rel="noopener noreferrer">Google Play</a>
                 <a href="#story">Why it exists</a>
                 <a href="#future">Future ambitions</a>
             </div>
